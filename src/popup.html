@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>LinkedIn Feed Filter</h1>
+  </div>
+  <div class="filters">
+    <label class="filter-row">
+      <span class="filter-label">Suggested</span>
+      <input type="checkbox" data-filter="suggested" checked>
+      <span class="toggle"></span>
+    </label>
+    <label class="filter-row">
+      <span class="filter-label">Promoted</span>
+      <input type="checkbox" data-filter="promoted" checked>
+      <span class="toggle"></span>
+    </label>
+    <label class="filter-row">
+      <span class="filter-label">Add to your feed</span>
+      <input type="checkbox" data-filter="addToFeed" checked>
+      <span class="toggle"></span>
+    </label>
+    <label class="filter-row">
+      <span class="filter-label">Recommended for you</span>
+      <input type="checkbox" data-filter="recommended" checked>
+      <span class="toggle"></span>
+    </label>
+    <label class="filter-row">
+      <span class="filter-label">Today's puzzles</span>
+      <input type="checkbox" data-filter="puzzles" checked>
+      <span class="toggle"></span>
+    </label>
+    <label class="filter-row">
+      <span class="filter-label">Sidebar ads</span>
+      <input type="checkbox" data-filter="sidebarAds" checked>
+      <span class="toggle"></span>
+    </label>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

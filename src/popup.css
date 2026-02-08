@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 280px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+}
+
+.header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #0a66c2;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.filters {
+  padding: 8px 0;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.filter-row:hover {
+  background: #f5f5f5;
+}
+
+.filter-label {
+  flex: 1;
+  font-size: 13px;
+  color: #333;
+}
+
+/* Hide default checkbox */
+.filter-row input[type="checkbox"] {
+  display: none;
+}
+
+/* Toggle switch */
+.toggle {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 10px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.toggle::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.filter-row input:checked + .toggle {
+  background: #0a66c2;
+}
+
+.filter-row input:checked + .toggle::after {
+  transform: translateX(16px);
+}
